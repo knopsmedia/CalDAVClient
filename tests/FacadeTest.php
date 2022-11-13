@@ -18,7 +18,7 @@ use CalDAVClient\Facade\Requests\MakeCalendarRequestVO;
 /**
  * Class FacadeTest
  */
-final class FacadeTest extends PHPUnit_Framework_TestCase
+final class FacadeTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -38,11 +38,11 @@ final class FacadeTest extends PHPUnit_Framework_TestCase
 
     private static $calendar_home = null;
 
-    public function setUp() {
+    public function setUp(): void {
         parent::setUp();
     }
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
        self::$client = new CalDavClient(
             getenv('CALDAV_SERVER_HOST') . getenv('CALDAV_SERVER_PATH'),
@@ -52,7 +52,7 @@ final class FacadeTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         // do sth after the last test
     }

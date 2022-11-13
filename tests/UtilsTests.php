@@ -15,7 +15,7 @@ use CalDAVClient\Facade\Utils\ICalTimeZoneBuilder;
 /**
  * Class UtilsTests
  */
-final class UtilsTests  extends PHPUnit_Framework_TestCase
+final class UtilsTests  extends \PHPUnit\Framework\TestCase
 {
      public function testBuildICalendarBuildChicagoTimeZone(){
          $calendar   = ICalTimeZoneBuilder::build(new DateTimeZone('America/Chicago'), '-//OpenStack//Boston 2017 Summit//EN');

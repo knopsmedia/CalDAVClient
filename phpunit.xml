@@ -8,7 +8,6 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false"
 >
     <testsuites>
         <testsuite name="Application Test Suite">
@@ -28,13 +27,13 @@
         -->
 
         <!-- This is the configuration template for an iCloud account -->
-        <env name="CALDAV_SERVER_HOST" value="https://pXX-caldav.icloud.com:443" />
+        <env name="CALDAV_SERVER_HOST" value="https://p33-caldav.icloud.com:443" />
         <env name="CALDAV_SERVER_PATH" value="/" />
-        <env name="CALDAV_CALENDAR_HOME" value="000000000/calendars/" />
-        <env name="CALDAV_TEST_CALENDAR_PATH" value="00000000-0000-0000-0000-000000000000/" />
+        <env name="CALDAV_CALENDAR_HOME" value="8281380611/calendars/" />
+        <env name="CALDAV_TEST_CALENDAR_PATH" value="work/" />
 
-        <env name="USER_LOGIN" value="my-icloud-login@icloud.com" />
-        <env name="USER_PASSWORD" value="my-2-factor-icloud-app-specific-password" />
+        <env name="USER_LOGIN" value="ignace@cogito.website" />
+        <env name="USER_PASSWORD" value="gdil-lapm-scxw-cfui" />
         <env name="AUTHTYPE" value="basic" />
     </php>
 </phpunit>
