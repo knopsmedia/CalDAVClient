@@ -46,12 +46,12 @@ final class EventRequestVO
     private $summary;
 
     /**
-     * @var DateTime
+     * @var \DateTimeInterface
      */
     private $start_time;
 
     /**
-     * @var DateTime
+     * @var \DateTimeInterface
      */
     private $end_time;
 
@@ -82,31 +82,20 @@ final class EventRequestVO
 
     /**
      * EventRequestDTO constructor.
-     * @param string $prod_id
-     * @param string $title
-     * @param string $description
-     * @param string $summary
-     * @param DateTime $start_time
-     * @param DateTime $end_time
-     * @param DateTimeZone $time_zone
-     * @param string $location_name
-     * @param string $location_title
-     * @param string $location_lat
-     * @param string $location_lng
      */
     public function __construct
     (
-        $prod_id,
-        $title,
-        $description,
-        $summary,
-        DateTime $start_time,
-        DateTime $end_time,
+        string $prod_id,
+        string $title,
+        string $description,
+        string $summary,
+        \DateTimeInterface $start_time,
+        \DateTimeInterface $end_time,
         DateTimeZone $time_zone = null,
-        $location_name = null,
-        $location_title = null,
-        $location_lat = null,
-        $location_lng = null
+        ?string $location_name = null,
+        ?string $location_title = null,
+        ?string $location_lat = null,
+        ?string $location_lng = null
     )
     {
         $this->prod_id         = $prod_id;
